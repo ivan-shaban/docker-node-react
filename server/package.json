@@ -5,8 +5,8 @@
     "build": "./node_modules/.bin/ts-node build.ts",
     "lint": "eslint . --ext .ts",
     "start": "node -r module-alias/register ./dist --env=production",
-    "start:dev": "npx nodemon",
-    "test": "npx nodemon --config ./spec/nodemon.json",
+    "start:dev": "nodemon",
+    "test": "nodemon --config ./spec/nodemon.json",
     "test:no-reloading": "./node_modules/.bin/ts-node --files -r tsconfig-paths/register ./spec"
   },
   "nodemonConfig": {
@@ -39,8 +39,10 @@
     "jsonwebtoken": "^8.5.1",
     "module-alias": "^2.2.2",
     "morgan": "^1.10.0",
+    "nodemon": "^2.0.13",
     "randomstring": "^1.2.1",
     "socket.io": "^4.2.0",
+    "tsconfig-paths": "^3.11.0",
     "typescript": "^4.4.3"
   },
   "devDependencies": {
